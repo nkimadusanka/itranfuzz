@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> This is my first Html5 Application </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		    @-webkit-viewport { width: device-width; }
+		    @-moz-viewport { width: device-width; }
+		    @-ms-viewport { width: device-width; }
+		    @-o-viewport { width: device-width; }
+		    @viewport { width: device-width; }
+		</style>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	</head>
+	<body data-theme="c">
+		<div data-role="page" data-transition="turn" id="homePage">
+			<div data-role="header" data-position="fixed">
+				<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-delete">Cancel</a>
+				<h1>Login</h1>
+    			<button class="ui-btn-right ui-btn ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Save</button>
+			</div>
+			<div data-role="content" style="">
+				<p>
+					Welcome to our first mobile web site. It's going to be the best
+					site you've ever seen. Once we get some content. And a business
+					plan. But the hard part is done!
+				</p>
+				<p>
+					You can also <a href="#aboutPage" data-transition="pop">learn more</a> about
+					Megacorp.
+				</p>
+				<label for="text-basic">Email:</label>
+				<input type="text" name="email" id="text-basic" value="">
+				<label for="text-basic">Password:</label>
+				<input type="password" name="password" id="text-basic" value="">			
+			</div>
+		</div>
+	</body>
+</htm>

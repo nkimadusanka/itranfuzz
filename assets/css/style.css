@@ -1,0 +1,14 @@
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+#top{
+    background-color: blue;
+    height: 50px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+#hello{
+	color:white;
+	text-align:center;
+}
