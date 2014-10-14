@@ -7,7 +7,9 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="10" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -27,12 +29,26 @@
         <activity
             android:name="info.itranfuzz.WebLoad"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            >
             <intent-filter>
                 <action android:name="info.itranfuzz.WEBLOAD"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="info.itranfuzz.service.TestProviderController"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="info.itranfuzz.TPC"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="info.itranfuzz.service.LocationService" android:exported="false">
+            <intent-filter>
+                <action android:name="info.itranfuzz.service.LOCATIONSERVICE"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

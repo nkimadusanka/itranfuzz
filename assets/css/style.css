@@ -2,13 +2,19 @@
 	margin: 0px 0px;
 	padding: 0px 0px;
 }
-#top{
-    background-color: blue;
-    height: 50px;
-    margin: 0px 0px;
-    padding: 0px 0px;
+
+.login{
+	margin-top:50px;
 }
-#hello{
-	color:white;
-	text-align:center;
+.error {
+    color:red;
 }
+
+/*
+
+index page styles
+
+*/
+
+
+

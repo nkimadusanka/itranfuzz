@@ -11,31 +11,48 @@
 		    @viewport { width: device-width; }
 		</style>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script src="js/validator.js"></script>
 	</head>
 	<body data-theme="c">
-		<div data-role="page" data-transition="turn" id="homePage">
+		<div data-role="page" id="login">
 			<div data-role="header" data-position="fixed">
-				<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-delete">Cancel</a>
-				<h1>Login</h1>
-    			<button class="ui-btn-right ui-btn ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Save</button>
+			<h1>Login</h1>
 			</div>
 			<div data-role="content" style="">
-				<p>
-					Welcome to our first mobile web site. It's going to be the best
-					site you've ever seen. Once we get some content. And a business
-					plan. But the hard part is done!
-				</p>
-				<p>
-					You can also <a href="#aboutPage" data-transition="pop">learn more</a> about
-					Megacorp.
-				</p>
-				<label for="text-basic">Email:</label>
-				<input type="text" name="email" id="text-basic" value="">
-				<label for="text-basic">Password:</label>
-				<input type="password" name="password" id="text-basic" value="">			
+				<div class="login">
+					<form id="loginform" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+						<fieldset data-role="fieldcontain"> 
+							<label for="text-basic">Email:</label>
+							<input type="text" name="email" id="email" value="">
+						</fieldset>
+						<fieldset data-role="fieldcontain">
+							<label for="text-basic">Password:</label>
+							<input type="password" name="password" id="password" value="">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<input class="ui-btn ui-icon-check ui-btn-icon-left" type="button" name="submit" id="submit" value="Submit" form="loginform" />
+				<div style="float:right;">
+					<input class="ui-btn ui-icon-delete ui-btn-icon-left" type="button" name="reset" value="Cancel" form="loginform" />
+				</div>
 			</div>
 		</div>
+		
+		<div id="basic" data-role="dialog">
+			<div data-role="header">
+				<h3 id="mgHead" class="ui-icon-arrow-r"></h3>
+			</div>
+			<div  data-role="content" >
+			<p id="mgCont">I am a default popup</p>
+			<br/>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="back" data-transition="flow">Ok</a>
+			</div>
+		</div>
+		
 	</body>
 </htm>
