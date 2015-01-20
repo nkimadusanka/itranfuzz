@@ -16,7 +16,7 @@ import android.webkit.WebViewClient;
 public class WebLoad extends Activity {
 
 	public static final String MyPREFERENCES = "login";
-	public static final String ROOTURL = "http://10.0.2.2/itransfusion.lk";
+	public static final String ROOTURL = "http://10.0.2.2/itranfuzz.info";
 	public static PStore STORE;
 
 	@SuppressLint("SetJavaScriptEnabled")

@@ -1,5 +1,5 @@
 //root site name
-var root = "http://10.0.2.2/itransfusion.lk";
+var root = "http://10.0.2.2/itranfuzz.info";
 
 $(document).on('pageinit', '#login', function(){ 
        $(document).on('click', '#submit', function() { // catch the form's submit event
